@@ -3,11 +3,10 @@ Rock Paper Scissors
 -------------------------------------------------------------
 '''
 
-
-#import random
 import os
 import re
 import secrets
+import arrow
 
 
 def check_play_status():
@@ -69,4 +68,5 @@ def play_rps():
 
 
 if __name__ == '__main__':
+   print('Current time and date is ' + arrow.utcnow().format(arrow.FORMAT_RFC850))
    play_rps()
