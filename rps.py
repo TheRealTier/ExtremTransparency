@@ -4,9 +4,10 @@ Rock Paper Scissors
 '''
 
 
-import random
+#import random
 import os
 import re
+import secrets
 
 
 def check_play_status():
@@ -46,7 +47,7 @@ def play_rps():
        print(f'You chose: {user_choice}')
 
        choices = ['R', 'P', 'S']
-       opp_choice = random.choice(choices)
+       opp_choice = secrets.choice(choices)
 
        print(f'I chose: {opp_choice}')
 
